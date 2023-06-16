@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Poppins';
+}
+
+body {
+	background-color: black;
+	color: white;
+}
+
+.container {
+	padding: 40px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 54px;
+}
+
+.pokedex {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 20px;
+	padding-inline-start: 0;
+	
+}
+
+.card {
+	list-style: none;
+	padding: 40px;
+	text-align: center;
+	border-radius: 20px;
+	position: relative;
+	/* From https://css.glass */
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.07);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(18.4px);
+-webkit-backdrop-filter: blur(18.4px);
+}
+
+.card img{
+	max-height: 90px;
+}
+
+.ghost{
+	border: 3px solid purple;
+}
+
+.steel {
+	border: 3px solid #96958a;
+}
+
+.fire {
+	border: 3px solid #e1473f;
+}
+
+.grass {
+	border: 3px solid #66af91;
+}
+
+.electric {
+	border: 3px solid #e7cd5d;
+}
+
+.water, .ice {
+	border: 3px solid #07438d;
+}
+
+.ground {
+	border: 3px solid #914c31;
+}
+
+.rock {
+	border: 3px solid #8595c9;
+}
+
+.fairy {
+	border: 3px solid #d18fcf;
+}
+
+.poison {
+	border: 3px solid #7439e1;
+}
+
+.bug {
+	border: 3px solid #c7e995;
+}
+
+.dragon {
+	border: 3px solid #05347c;
+}
+
+.psychic {
+	border: 3px solid #8f51e9;
+}
+
+.flying {
+	border: 3px solid #a9b8ee;
+}
+
+.fighting {
+	border: 3px solid #d1284f;
+}
+
+.normal {
+	border: 3px solid #e9e2da;
+}
+
+.card:hover {
+	animation: bounce 0.5s linear;
+}
+
+.card-title {
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	font-size: 32px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+	
+}
+
+.card-subtitle {
+	margin-top: 5px;
+	color: #666;
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;
+	text-transform: capitalize;
+	
+}
+
+.card-image {
+	height: 180px;
+	position: relative;
+	z-index: 2;
+}
+
+@keyframes bounce {
+	20% {
+			transform: translateY(-6px);
+	}
+	40% {
+			transform: translateY(0px);
+	}
+
+	80% {
+			transform: translateY(-2px);
+	}
+	100% {
+			transform: translateY(0);
+	}
+}
+
+h1{
+	padding-bottom: 2em;
+}
+
+.ocultar{
+	display: none;
+}
+
+
+
+
+/* -------------- PAGINA STATUS ------------ */
+
+.evolution{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+
+.statusContainer{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+	width: 100%;
+	height: 100vh;
+}
+
+.imagePokeball img{
+	max-width: 40px;
+	margin-right: 9px;
+}
+
+.embaixoImagem{
+	display: flex;
+    gap: 5px;
+	align-items: center;
+	justify-content: center;
+}
+
+.imagePoke{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.imagePoke img{
+	width: 200px;
+}
+
+.description h2{
+	margin-bottom: 1em;
+}
+
+.description p{
+	font-size: 21px;
+	margin-bottom: 5em;
+}
+
+.evolutionTitle{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: x-large;
+}
+
+.left{
+	align-items: center;
+    width: 40%;
+    height: 58em;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+	border-radius: 20px;
+	/* From https://css.glass */
+background: rgba(255, 255, 255, 0.04);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(19.2px);
+-webkit-backdrop-filter: blur(19.2px);
+}
+
+.right{
+	align-items: center;
+    width: 40%;
+    height: 58em;
+    display: flex;
+    flex-direction: column;
+	border-radius: 20px;
+/* From https://css.glass */
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.04);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(19.2px);
+-webkit-backdrop-filter: blur(19.2px);
+
+}
+
+.namePoke{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	text-transform: capitalize;
+}
+
+.descPoke{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.atributes{
+	justify-content: space-evenly;
+	align-items: center;
+	display: flex;
+}
+
+.height h4{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.type h4{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.weight h4{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.description p{
+	width: 95%;
+    margin-left: 45px;
+}
+
+.description h2{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    margin-top: 2em;
+}
+
+.evolution img{
+	width: 250px;
+}
+
+.idPoke{
+	font-size: 40px;
+}
+
+.namePoke{
+	font-size:60px;
+}
+
+.descPoke{
+	font-size: x-large;
+	margin-bottom: 3em;
+}
+
+.atributes{
+	font-size: xx-large;
+}
+
+.height{
+	margin-right: 50px;
+	text-align: center;
+}
+
+.type{
+	margin-right: 50px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.weight{
+	text-align: center;
+}
+
+.embaixoImagem{
+	margin-top: 10px;
+}
+
+.returnHome{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poke1, .poke2, .poke3{
+	font-style: italic;
+}
+
+.right:hover {
+	animation: bounce 0.5s linear;
+}
+
+.left:hover {
+	animation: bounce 0.5s linear;
+}
+
+.scrollable-div {
+	max-height: 300px; /* Defina a altura máxima desejada */
+	overflow: auto; /* Adiciona a barra de rolagem quando necessário */
+  }
+  
