@@ -1,2 +1,6 @@
-# Pokedex
-Creating a pokemon pokedex, consuming the pokeapi
+
+## Pokedex 🧮:
+
+### Pokedex com JS
+<p align="left">
+Criado uma pokedex responsiva, consumindo a pokeapi oficializada pela POKEMON.
