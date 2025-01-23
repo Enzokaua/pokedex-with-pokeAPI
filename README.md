@@ -1,6 +1,13 @@
+# Pokedex com a PokeApi
 
-## Pokedex 🧮:
+## Descrição
 
-### Pokedex com JS
-<p align="left">
-Criado uma pokedex responsiva, consumindo a pokeapi oficializada pela POKEMON.
+Pokedex consumindo a pokeAPI, criando um design responsivo com essa integração.
+
+## Tecnologias Utilizadas
+
+As tecnologias deste projeto, são:
+
+- *HTML5*
+- *CSS3*
+- *JavaScript*
