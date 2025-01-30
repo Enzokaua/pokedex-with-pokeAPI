@@ -48,4 +48,4 @@ A estrutura principal do projeto é composta por três arquivos básicos:
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/pokedex-js.git
+   git clone https://github.com/enzokaua/pokedex-with-pokeAPI.git
